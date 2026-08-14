@@ -1,0 +1,10 @@
+1. we pass the data thru the conArg with name atrribute no need to maintain the order
+	2. without name attribute also we can pass but we need to maintain the order
+	3. with index attribute also we can pass the data with any order , index starts from 0
+	
+	
+	thru the xml config if we are injecting address bean
+	
+	if we have only one bean it will inject that bean (byType)
+	
+	if we have more than  one bean it will try to inject   (byName)
