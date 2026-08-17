@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<context:component-scan base-package="springwithautowireanno2"/>
+
+
+
+<bean id="address1" class="springwithautowireanno2.Address">
+<property name="doorno" value="12"></property>
+	
+<property name="city" value="HYD"></property>
+<property name="pincode" value="12324"></property>
+
+</bean>
+
+
+
+<bean id="address2" class="springwithautowireanno2.Address"  primary="true">
+<property name="doorno" value="2"></property>
+	
+<property name="city" value="Chennai"></property>
+<property name="pincode" value="77777"></property>
+
+</bean>
+ 
+<bean id="a2" class="springwithautowireanno2.Address" >
+<property name="doorno" value="1"></property>
+	
+<property name="city" value="BLR"></property>
+<property name="pincode" value="888888"></property>
+
+</bean>
+
+
+</beans>
